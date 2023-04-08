@@ -1,13 +1,12 @@
 import {StyleSheet, SafeAreaView, StatusBar} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import MainStack from './MainStack';
+import MainStack, {navigationRef} from './MainStack';
 
 const Route = () => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#ffff'}}>
-      <StatusBar translucent={false} backgroundColor={'#ffff'} />
-      <NavigationContainer>
+      <NavigationContainer ref={navigationRef}>
         <MainStack />
       </NavigationContainer>
     </SafeAreaView>

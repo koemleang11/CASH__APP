@@ -15,12 +15,20 @@ const TextInputs = (props: any) => {
         </Text>
       </View>
       <View style={styles.container}>
-        <TextInput
-          style={styles.input}
-          placeholder={props.text}
-          placeholderTextColor={colors.DarkGray}
-        />
-        <Image source={props.images} style={{tintColor: colors.DarkGray}} />
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Image source={props.images} style={{tintColor: colors.DarkGray}} />
+          <TextInput
+            style={styles.input}
+            placeholder={props.text}
+            placeholderTextColor={colors.DarkGray}
+          />
+        </View>
+        <Image source={props.image} style={{tintColor: colors.DarkGray}} />
       </View>
     </>
   );
@@ -42,5 +50,6 @@ const styles = StyleSheet.create({
   },
   input: {
     fontSize: 16,
+    paddingLeft: 20,
   },
 });
