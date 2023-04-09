@@ -12,6 +12,9 @@ import NewPassword from '../Screen/NewPassword';
 import Registraation from '../Screen/Registraation';
 import HomeScreen from '../container/HomeScreen';
 import ButtomTapNavigator from './ButtomTapNavigator';
+import NotificationScreen from '../Screen/NotificationScreen';
+import ContactScreen from '../Screen/ContactScreen';
+import PromotionScreen from '../Screen/PromotionScreen';
 
 export const navigationRef: any = createNavigationContainerRef();
 
@@ -79,12 +82,15 @@ const MainStack = () => {
         headerShown: false,
         animation: 'fade_from_bottom',
       }}>
-      <Stack.Screen component={ButtomTapNavigator} name="ButtomTapNavigator" />
       <Stack.Screen component={LoginScreen} name="LoginScreen" />
+      <Stack.Screen component={ButtomTapNavigator} name="ButtomTapNavigator" />
       <Stack.Screen component={HomeScreen} name="HomeScreen" />
       <Stack.Screen component={ForgetPasswordScreen} name="ForgetPassword" />
       <Stack.Screen component={NewPassword} name="NewPassword" />
       <Stack.Screen component={Registraation} name="Registraation" />
+      <Stack.Screen component={NotificationScreen} name="NotificationScreen" />
+      <Stack.Screen component={ContactScreen} name="ContactScreen" />
+      <Stack.Screen component={PromotionScreen} name="PromotionScreen" />
     </Stack.Navigator>
   );
 };

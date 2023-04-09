@@ -55,7 +55,7 @@ const ForgetPasswordScreen = () => {
           justifyContent: 'center',
           alignItems: 'center',
           marginTop: 73,
-          marginBottom: 120,
+          marginBottom: 90,
         }}>
         <Text
           style={{

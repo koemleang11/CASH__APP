@@ -16,8 +16,6 @@ import ButtomCustom from '../component/atomiccomponent/ButtomCustom';
 import TextInputImage from '../component/atomiccomponent/TextInputImage';
 
 const ForgetPasswordScreen = () => {
-  const [date, setDate] = useState(new Date());
-  const [showPicker, setShowPicker] = useState(false);
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: colors.miniGray}}>
       <IconHeader
@@ -46,7 +44,7 @@ const ForgetPasswordScreen = () => {
         image={require('../assets/Icons/EyeClose.png')}
       />
       {/* <DateTimePicker mode="date" display="spinner" value={date} /> */}
-      <View style={{marginTop: 345}}>
+      <View style={{marginTop: 300}}>
         <ButtomCustom text="Update" />
       </View>
     </SafeAreaView>
